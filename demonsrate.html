@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demontration</title>
+    <script>
+		// Define function to get length of a string
+		function getStringLength(str) {
+			return str.length;
+		}
+
+		// Define function to reverse the digits of a number
+		function reverseNumber(num) {
+			var reversed = parseInt(num.toString().split('').reverse().join(''));
+			return reversed;
+		}
+	</script>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+	
+	<h2>Get Length of a String</h2>
+	<p>Enter a string:</p>
+	<input type="text" id="stringInput">
+	<button onclick="getLength()">Get Length</button>
+	<p id="lengthOutput"></p>
+
+	<h2>Reverse the Digits of a Number</h2>
+	<p>Enter a number:</p>
+	<input type="number" id="numberInput">
+	<button onclick="reverseDigits()">Reverse Digits</button>
+	<p id="reverseOutput"></p>
+
+    <!-- Javascript -->
+    <script>
+		// Function to get length of input string
+		function getLength() {
+			var str = document.getElementById("stringInput").value;
+			var len = getStringLength(str);
+			document.getElementById("lengthOutput").innerHTML = "Length of string: " + len;
+		}
+
+		// Function to reverse digits of input number
+		function reverseDigits() {
+			var num = document.getElementById("numberInput").value;
+			var reversed = reverseNumber(num);
+			document.getElementById("reverseOutput").innerHTML = "Number with reversed digits: " + reversed;
+		}
+	</script>
+</body>
+</html>

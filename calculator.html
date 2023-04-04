@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+		input[type="button"] {
+			width: 50px;
+			height: 50px;
+			font-size: 20px;
+			background-color: lightgray;
+			border: 1px solid black;
+			border-radius: 5px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		input[type="text"] {
+			width: 200px;
+			height: 50px;
+			font-size: 20px;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+	<input type="text" id="result" readonly><br>
+	<input type="button" value="1" onclick="numClick('1')">
+	<input type="button" value="2" onclick="numClick('2')">
+	<input type="button" value="3" onclick="numClick('3')">
+	<input type="button" value="+" onclick="opClick('+')"><br>
+	<input type="button" value="4" onclick="numClick('4')">
+	<input type="button" value="5" onclick="numClick('5')">
+	<input type="button" value="6" onclick="numClick('6')">
+	<input type="button" value="-" onclick="opClick('-')"><br>
+	<input type="button" value="7" onclick="numClick('7')">
+	<input type="button" value="8" onclick="numClick('8')">
+	<input type="button" value="9" onclick="numClick('9')">
+	<input type="button" value="*" onclick="opClick('*')"><br>
+	<input type="button" value="C" onclick="clearClick()">
+	<input type="button" value="0" onclick="numClick('0')">
+	<input type="button" value="=" onclick="equalsClick()">
+	<input type="button" value="/" onclick="opClick('/')"><br>
+
+    <script src="javascript/calculator.js"></script>
+</body>
+</html>
